@@ -1,13 +1,12 @@
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import Image from "next/image";
-import bg from "/public/bg.jpg";
+import React from "react";
 
-export default function Home() {
+const Services = () => {
   return (
-    <main>
+    <>
       <Container className="flex flex-col gap-3">
-        <Title title="Home Page" />
+        <Title title="Services Page" />
         <p className="text-lg tracking-wide">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
           repudiandae laboriosam minus nihil architecto aperiam ad quasi
@@ -51,7 +50,8 @@ export default function Home() {
           repellat voluptatum eum.
         </p>
       </Container>
-      <Image src={bg} alt="bg-image" className="w-full h-[800px] object-cover" />
-    </main>
+    </>
   );
-}
+};
+
+export default Services;
